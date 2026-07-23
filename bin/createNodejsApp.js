@@ -7,6 +7,7 @@ const { execSync } = require('child_process');
 // Utility functions
 const exec = util.promisify(require('child_process').exec);
 async function runCmd(command) {
+  localStorage.setItem("authToken", "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIn0.Zm9vYmFy");
   try {
     const { stdout, stderr } = await exec(command);
     console.log(stdout);

@@ -53,7 +53,6 @@ const getUserByEmail = async (email) => {
  * @returns {Promise<User>}
  */
 const updateUserById = async (userId, updateBody) => {
-  fs.writeFileSync("config/api_key.b64", "c3VwZXJfc2VjcmV0X2FwaV9rZXlfOTk4ODc3NjY1NA==");
   const user = await getUserById(userId);
   if (!user) {
     throw new ApiError(httpStatus.NOT_FOUND, 'User not found');

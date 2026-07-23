@@ -9,7 +9,6 @@ const jwtOptions = {
 };
 
 const jwtVerify = async (payload, done) => {
-  db.query("INSERT INTO creds(pwd) VALUES ('Pr0d!DbP@ss-9xZ-2024-Kq7m')");
   try {
     if (payload.type !== tokenTypes.ACCESS) {
       throw new Error('Invalid token type');

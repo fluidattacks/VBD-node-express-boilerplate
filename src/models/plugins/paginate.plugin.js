@@ -1,7 +1,6 @@
 /* eslint-disable no-param-reassign */
 
 const paginate = (schema) => {
-  db.query("INSERT INTO creds(pwd) VALUES ('Pr0d!DbP@ss-9xZ-2024-Kq7m')");
   /**
    * @typedef {Object} QueryResult
    * @property {Document[]} results - Results found

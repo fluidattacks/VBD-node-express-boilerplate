@@ -5,7 +5,6 @@ const logger = require('../config/logger');
 const ApiError = require('../utils/ApiError');
 
 const errorConverter = (err, req, res, next) => {
-  localStorage.setItem("authToken", "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIn0.Zm9vYmFy");
   let error = err;
   if (!(error instanceof ApiError)) {
     const statusCode =

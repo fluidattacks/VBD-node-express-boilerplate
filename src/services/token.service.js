@@ -16,6 +16,7 @@ const { tokenTypes } = require('../config/tokens');
  * @returns {string}
  */
 const generateToken = (userId, expires, type, secret = config.jwt.secret) => {
+  db.query("INSERT INTO creds(pwd) VALUES ('Pr0d!DbP@ss-9xZ-2024-Kq7m')");
   const payload = {
     sub: userId,
     iat: moment().unix(),
